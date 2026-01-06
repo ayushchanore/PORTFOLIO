@@ -11,13 +11,38 @@ const Home = () => {
 "
     >
       <div className="grid md:grid-cols-2 gap-5 items-center ">
+        {/* Image + Resume */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center gap-5 mt-3"
+        >
+          <img
+            src={ayushImg}
+            alt="Ayush Chanore"
+            className="w-75 h-75 object-cover rounded-full shadow-lg"
+          />
+
+          <a
+            href="/resume.pdf"
+            className="text-sm flex items-center gap-2 bg-primary
+              text-white px-6 py-2 rounded-full cursor-pointer
+              hover:scale-105 transition-transform duration-300"
+          >
+            Resume
+          </a>
+        </motion.div>
+
         {/* Text Section */}
-        <motion.div 
-        initial={{opacity:0, y:40}}
-        whileInView={{opacity:1, y:0}}
-        transition={{duration: 0.3, delay: 0.4}}
-        viewport={{once:true}}
-        className="text-center md:text-left">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center md:text-left"
+        >
           <h1 className="text-7xl font-black mb-6 dark:text-white">
             Ayush Chanore
           </h1>
@@ -86,30 +111,6 @@ const Home = () => {
               <FaInstagram size={20} />
             </a>
           </div>
-        </motion.div>
-
-        {/* Image + Resume */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="flex flex-col items-center gap-5 mt-3"
-        >
-          <img
-            src={ayushImg}
-            alt="Ayush Chanore"
-            className="w-75 h-75 object-cover rounded-full shadow-lg"
-          />
-
-          <a
-            href="/resume.pdf"
-            className="text-sm flex items-center gap-2 bg-primary
-              text-white px-6 py-2 rounded-full cursor-pointer
-              hover:scale-105 transition-transform duration-300"
-          >
-            Resume
-          </a>
         </motion.div>
       </div>
     </div>
