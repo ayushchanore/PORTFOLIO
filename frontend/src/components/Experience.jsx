@@ -35,7 +35,7 @@ const Experience = () => {
 
         {/* Certificate */}
         <a
-          href="https://online.flippingbook.com/view/188539590/?_gl=1*9bhouf*_gcl_au*NTE0NDg4NjIwLjE3NjU1NDgyNjk."
+          href="https://dominant-brown-ql3rersfgc.edgeone.app/Ayush%20Completion%20Letter.pdf"
           className="inline-flex items-center gap-2 mt-5
                      text-indigo-600 text-sm font-medium
                      bg-indigo-50 px-4 py-2 rounded-full

@@ -1,5 +1,7 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import ayushImg from "../assets/ayush.jpeg";
+import resumePdf from "../assets/Ayush_Resume.pdf";
 import assets from "../assets/assets";
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { motion } from "motion/react";
@@ -26,7 +28,17 @@ const Home = () => {
           />
 
           <a
-            href="/resume.pdf"
+            href={resumePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              emailjs.send(
+                "service_6d2yyqm",
+                "template_i26l5fm",
+                { date: new Date().toLocaleDateString(), time: new Date().toLocaleTimeString() },
+                "-wsOAepoaBPWabARc"
+              )
+            }
             className="text-sm flex items-center gap-2 bg-primary
               text-white px-6 py-2 rounded-full cursor-pointer
               hover:scale-105 transition-transform duration-300"
@@ -58,57 +70,28 @@ const Home = () => {
             applications. Combining technical expertise with problem-solving
             skills to develop efficient software solutions.
           </p>
-          <div className="flex sm:justify-center   gap-4 mt-3">
-            {/* GitHub */}
+          <div className="flex justify-center md:justify-start gap-4 mt-5 flex-wrap">
             <a
               href="https://github.com/ayushchanore"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-full bg-white text-indigo-600
-                                 flex items-center justify-center
-                                 transition-all duration-300
-                                 hover:bg-indigo-600 hover:text-white
-                                 hover:-translate-y-1"
+              className="w-11 h-11 rounded-full bg-white text-indigo-600 flex items-center justify-center shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white hover:-translate-y-1"
             >
               <FaGithub size={20} />
             </a>
-
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/ayush-chanore/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-full bg-white text-indigo-600
-                                 flex items-center justify-center
-                                 transition-all duration-300
-                                 hover:bg-indigo-600 hover:text-white
-                                 hover:-translate-y-1"
+              className="w-11 h-11 rounded-full bg-white text-indigo-600 flex items-center justify-center shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white hover:-translate-y-1"
             >
               <FaLinkedin size={20} />
             </a>
-
-            {/* Email */}
             <a
-              href="ayushchanore05@gmail.com"
-              className="w-11 h-11 rounded-full bg-white text-indigo-600
-                                 flex items-center justify-center
-                                 transition-all duration-300
-                                 hover:bg-indigo-600 hover:text-white
-                                 hover:-translate-y-1"
+              href="mailto:ayushchanore05@gmail.com"
+              className="w-11 h-11 rounded-full bg-white text-indigo-600 flex items-center justify-center shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white hover:-translate-y-1"
             >
               <FaEnvelope size={20} />
-            </a>
-            <a
-              href="https://www.instagram.com/ayushchanore03/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 rounded-full bg-white text-indigo-600
-                                           flex items-center justify-center
-                                           transition-all duration-300
-                                           hover:bg-indigo-600 hover:text-white
-                                           hover:-translate-y-1"
-            >
-              <FaInstagram size={20} />
             </a>
           </div>
         </motion.div>

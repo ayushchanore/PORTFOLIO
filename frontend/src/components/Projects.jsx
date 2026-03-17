@@ -1,8 +1,32 @@
 import React from "react";
 import { FaGithub}  from "react-icons/fa";
+import organizationImg from "../assets/organization.png";
 
 
 const projects = [
+  
+ 
+  {
+    title: "ORGAN-I-ZATION",
+    image: organizationImg,
+    description:
+      "Developed a full-stack Organ Donation web using React.js and Express.js with responsive and user-friendly design .",
+    tech: [
+      "React.js", "Tailwind CSS", "Express.js","MongoDB"
+    ],
+    demo: true,
+    demoLink:"https://organization-2.vercel.app/"
+  },
+   {
+    title: "ASKGPT",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqO-s_pX8KaYbUQL-cjRvR_N12mjKNTTJLKw&s",
+    description:
+      "Developed the Chatgpt clone name AskGpt using OpenAI api key.",
+    tech: ["React.js", "Bootstrap", "Express.js", "MangoDB", "OpenAI"],
+    demo: true,
+    demoLink:"#"
+  },
   {
     title: "ZERODHA CLONE",
     image:
@@ -13,16 +37,7 @@ const projects = [
     demo: true,
     demoLink:"https://zerodhaclone-1rlp.vercel.app/"
   },
-  {
-    title: "ASKGPT",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqO-s_pX8KaYbUQL-cjRvR_N12mjKNTTJLKw&s",
-    description:
-      "Developed the Chatgpt clone name AskGpt using OpenAI api key.",
-    tech: ["React.js", "Bootstrap", "Express.js", "MangoDB", "OpenAI"],
-    demo: true,
-    demoLink:"#"
-  },
+  
   {
     title: "Mandir Website",
     image:
@@ -35,6 +50,8 @@ const projects = [
     demo: true,
     demoLink:"https://mandir-web-site.netlify.app/"
   },
+  
+  
 ];
 
 const Projects = () => {
