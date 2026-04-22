@@ -1,11 +1,22 @@
 import React from "react";
 import { FaGithub}  from "react-icons/fa";
 import organizationImg from "../assets/organization.png";
+import canteenImg from "../assets/Canteen.png";
+
 
 
 const projects = [
-  
- 
+  {
+    title: "Smart Canteen System",
+    image: canteenImg,
+    description:
+      "Build smart web page for College canteen with online payment integration",
+    tech: [
+      "React.js", "Tailwind CSS", "Express.js","MongoDB", "razorpay test API key", "JWT Token"
+    ],
+    demo: true,
+    demoLink:"https://canteen-niu4.vercel.app/"
+  },
   {
     title: "ORGAN-I-ZATION",
     image: organizationImg,
