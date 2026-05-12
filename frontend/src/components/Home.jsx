@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import ayushImg from "../assets/ayush.jpeg";
-import resumePdf from "../assets/AyushResume.pdf";
+
 import assets from "../assets/assets";
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { motion } from "motion/react";
@@ -28,7 +28,7 @@ const Home = () => {
           />
 
           <a
-            href={resumePdf}
+            href="/AyushResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
