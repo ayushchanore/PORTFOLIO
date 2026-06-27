@@ -35,10 +35,10 @@ const About = () => {
             </h3>
 
             <ul className="space-y-3">
-              <li className="flex items-center gap-3">
+              <a href="https://leetcode.com/u/AyushChanore/"><li className="flex items-center gap-3">
                 <Code size={18} className="text-indigo-500 shrink-0" />
                 <span>LeetCode</span>
-              </li>
+              </li></a>
               <li className="flex items-center gap-3">
                 <Code size={18} className="text-indigo-500 shrink-0" />
                 <span>GeeksForGeeks</span>

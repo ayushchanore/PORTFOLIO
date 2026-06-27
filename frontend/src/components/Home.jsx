@@ -4,6 +4,7 @@ import ayushImg from "../assets/ayush.jpeg";
 
 import assets from "../assets/assets";
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { motion } from "motion/react";
 
 const Home = () => {
@@ -93,6 +94,15 @@ const Home = () => {
             >
               <FaEnvelope size={20} />
             </a>
+            <a
+              href="https://leetcode.com/ayushchanore"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-full bg-white text-indigo-600 flex items-center justify-center shadow-md transition-all duration-300 hover:bg-indigo-600 hover:text-white hover:-translate-y-1"
+            >
+              <SiLeetcode size={20} />
+            </a>
+            
           </div>
         </motion.div>
       </div>
